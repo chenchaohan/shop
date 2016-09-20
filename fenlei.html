@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>会员杂锦</title>
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+    <style>
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    img {
+        width: 100%;
+        height: 12rem;
+    }
+    
+    .swiper-pagination-bullet {
+        background: #a19fa1;
+        width: 5px;
+        height: 5px;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background: orange;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container" id="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/car_suv.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/iPhone6s.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    
+</body>
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script src="js/swiper-3.3.1.jquery.min.js"></script>
+<script type="text/javascript">
+var mySwiper = new Swiper('.swiper-container', {
+    autoplay: 3000,
+    direction: 'horizontal',
+    loop: true,
+
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    autoplayDisableOnInteraction: false,
+});
+</script>
+
+</html>
